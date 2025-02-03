@@ -4,12 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter  // Lombok sẽ tự động tạo getter cho tất cả các trường
-@Setter  // Lombok sẽ tự động tạo setter cho tất cả các trường
+@Table(name = "products")
+@Getter  
+@Setter  
 public class Product {
 
     @Id
