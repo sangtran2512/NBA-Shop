@@ -18,6 +18,8 @@ public class TeamController {
     //API de lay tat ca Team
     @GetMapping("/teams")
     public List<Team> getAllTeams() {
-        return teamService.getAllTeams();
+        List<Team> teams = teamService.getAllTeams();
+        System.out.println(teams);
+        return teams;
     }
 }
