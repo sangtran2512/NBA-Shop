@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" xmlns:th="http://www.thymeleaf.org"></html>>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Landing Page</title>
     <style>
         body {
@@ -85,6 +86,7 @@
             <h3>Sản phẩm mới</h3>
             <p>Khám phá những sản phẩm mới nhất trong cửa hàng của chúng tôi, bao gồm áo thun, giày thể thao và các phụ kiện khác.</p>
         </div>
+        <p th:text="'Current date and time: ' + ${currentDate}"></p>
         <div class="card">
             <h3>Ưu đãi đặc biệt</h3>
             <p>Đừng bỏ lỡ các ưu đãi đặc biệt với giảm giá hấp dẫn cho các sản phẩm nổi bật trong mùa này.</p>
